@@ -4,7 +4,7 @@ const projetos = [
     titulo: "Portfólio Pessoal",
     descricao: "Este mesmo portfólio, desenvolvido com HTML5, CSS3 e JavaScript puro, sem frameworks externos.",
     tag: "Frontend",
-    link: "https://github.com/mourapontes"
+    link: "https://github.com/mourapontes/meu_portf-lio"
   },
   {
     titulo: "Avalia-O-IMC",
