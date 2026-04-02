@@ -14,11 +14,16 @@
   <!-- Cabeçalho com menu de navegação -->
   <header>
     <div class="header-inner">
+      <button class="hamburguer" id="hamburguer" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
       <h1 class="logo">Rangel<span>.dev</span></h1>
-      <nav aria-label="Menu principal">
+      <nav id="nav-menu" aria-label="Menu principal">
         <ul>
-          <li><a href="#sobre">Sobre Mim</a></li>
-          <li><a href="#projetos">Meus Projetos</a></li>
+          <li><button class="nav-btn" data-target="sobre">Sobre Mim</button></li>
+          <li><button class="nav-btn" data-target="projetos">Meus Projetos</button></li>
         </ul>
       </nav>
     </div>
@@ -31,8 +36,8 @@
       <h2 class="hero-nome">Rangel Moura Pontes</h2>
       <p class="hero-sub">Desenvolvedor Web &bull; HTML &bull; CSS &bull; JavaScript</p>
       <div class="hero-btns">
-        <a href="#projetos" class="btn-hero-primary">Ver Projetos</a>
-        <a href="#sobre" class="btn-hero-outline">Sobre Mim</a>
+        <button class="btn-hero-primary" data-target="projetos">Ver Projetos</button>
+        <button class="btn-hero-outline" data-target="sobre">Sobre Mim</button>
       </div>
     </div>
   </section>
@@ -41,7 +46,7 @@
   <main>
 
     <!-- Seção: Sobre Mim -->
-    <section id="sobre" aria-labelledby="titulo-sobre">
+    <section id="sobre" class="secao-oculta" aria-labelledby="titulo-sobre">
       <div class="section-inner">
         <h2 id="titulo-sobre">Sobre Mim</h2>
         <div class="sobre-conteudo">
@@ -61,7 +66,7 @@
     </section>
 
     <!-- Seção: Meus Projetos -->
-    <section id="projetos" aria-labelledby="titulo-projetos">
+    <section id="projetos" class="secao-oculta" aria-labelledby="titulo-projetos">
       <div class="section-inner">
         <h2 id="titulo-projetos">Meus Projetos</h2>
         <div id="lista-projetos" class="grid-projetos"></div>
