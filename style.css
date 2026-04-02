@@ -49,7 +49,7 @@ header {
   max-width: 1100px;
   margin: 0 auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   height: 64px;
   gap: 32px;
@@ -228,6 +228,9 @@ nav ul li .nav-btn.ativo {
   border-radius: 10px;
   font-weight: 600;
   font-size: 0.95rem;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
   transition: opacity var(--transicao), transform var(--transicao);
 }
 
@@ -245,6 +248,8 @@ nav ul li .nav-btn.ativo {
   font-weight: 600;
   font-size: 0.95rem;
   border: 1px solid var(--cor-borda);
+  cursor: pointer;
+  font-family: inherit;
   transition: border-color var(--transicao), color var(--transicao), transform var(--transicao);
 }
 
@@ -486,6 +491,25 @@ footer {
   font-size: 0.8rem;
 }
 
+/* ===== Responsividade Tablet ===== */
+@media (max-width: 900px) {
+  .hero {
+    padding: 80px 24px;
+  }
+
+  .hero-nome {
+    font-size: 1.9rem;
+  }
+
+  .sobre-conteudo {
+    padding: 28px;
+  }
+
+  .section-inner h2 {
+    font-size: 1.45rem;
+  }
+}
+
 /* ===== Responsividade Mobile ===== */
 @media (max-width: 600px) {
   .hamburguer {
@@ -532,11 +556,15 @@ footer {
   }
 
   .hero {
-    padding: 72px 24px;
+    padding: 60px 20px;
   }
 
   .hero-nome {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
+  }
+
+  .hero-sub {
+    font-size: 0.9rem;
   }
 
   .sobre-conteudo {
@@ -555,6 +583,18 @@ footer {
   }
 
   .section-inner h2 {
-    font-size: 1.35rem;
+    font-size: 1.3rem;
+  }
+
+  main {
+    padding: 0 16px;
+  }
+
+  section {
+    padding: 52px 0;
+  }
+
+  footer {
+    padding: 28px 16px;
   }
 }
